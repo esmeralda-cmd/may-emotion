@@ -1,0 +1,340 @@
+/* Réinitialisation globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EDE9E3;
+    height: 100vh; /* Assure que le body prend toute la hauteur */
+    display: flex;
+    flex-direction: column; /* Permet de gérer la mise en page en colonne */
+}
+
+/* Header */
+header {
+    height: 60px;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 10; /* Le header doit toujours être au-dessus */
+    padding: 10px;
+    background-color: #EDE9E3;
+}
+
+
+
+/* Menu */
+
+nav {
+    text-decoration:none;
+    color: inherit; /* Utilise la couleur par défaut du texte */
+}
+
+.logo-fit {
+    height: 250px;
+    position: relative;
+    top: 70px;
+    left: 50px;
+    margin-top: 50px;
+}
+
+.menu {
+    flex: 1; /* Permet au menu de prendre tout l’espace disponible */
+    display: flex;
+    justify-content: flex-end; /* Centre les liens horizontalement */
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a{
+    
+    margin: 0 15px;
+    text-decoration:none;
+    color: inherit; /* Utilise la couleur par défaut du texte */
+}
+
+.menu ul li a:hover {
+    color: white; /* Change la couleur du texte */
+    background-color: #D4A373; /* Change la couleur de fond */
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.burger-menu {
+    display: none; /* Caché par défaut */
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+/*page d'accueil*/
+
+/*background*/
+
+.page-une {
+    
+     background-image: url('Image-may-emotions/beautiful-watercolor-floral-arrangement-removebg-preview.png');
+     background-position: center center;  /* Centre l'image */
+     background-size: 50%; /* Augmente la taille de l'image de fond */
+     height: calc(100vh - 60px); /* 100% de l'écran moins la hauteur du header */
+     background-repeat: no-repeat;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+      
+   
+}
+
+.image-center {
+    display: flex   ;
+    text-align: center;
+    justify-content: center;
+ 
+}
+
+/*présentation *introduction
+.introduction {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+
+}*/
+
+.introduction {
+    position: relative;
+    display: flex;
+    justify-content: left; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 100%;
+    gap: 0; /* Supprime les espaces */
+    margin: 0 auto; /* Assure un centrage sur toute la largeur */
+    padding: 0;
+}
+
+div .photo-introduction {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+.photo-introduction {
+    width: 20%; /* Ajuste la largeur */
+   
+    margin-left: 30%;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.photo-introduction img {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du conteneur */
+    max-height: 100%; /* S'assure que l'image ne dépasse pas la hauteur du conteneur */
+}
+
+.square-introduction {
+    position: absolute;
+    width: 30%; 
+    height: 50vh;
+    border-radius: 10px; 
+    margin: 100px 0 0  800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+   
+    display: flex; /* Active Flexbox */
+    flex-direction: column;
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte */
+    padding: 50px;
+    font-size: 25px;
+}
+
+button {
+    background-color: #D4A373; /* Couleur chaude et élégante */
+    color: white; /* Texte blanc */
+    border: none; /* Supprime la bordure */
+    padding: 15px 30px; /* Ajoute de l’espace autour du texte */
+    font-size: 18px; /* Augmente la taille du texte */
+    font-weight: bold; /* Rend le texte plus lisible */
+    border-radius: 30px; /* Arrondi les bords */
+    cursor: pointer; /* Curseur au survol */
+    transition: all 0.3s ease-in-out; /* Animation fluide */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Effet d’ombre */
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: #B6895B; /* Assombrit au survol */
+}
+
+
+/* Section prestation */
+
+.prestation-container {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.prestation {
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    height: 50vh;
+}
+
+.prestation-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+.page-trois {
+    height: 50vh;
+    margin: 50px 20px 20px 20px;
+}
+
+
+/* 1️⃣ Écrans moyens (tablettes) */
+@media screen and (max-width: 1024px) {
+    .logo-fit {
+        height: 200px;
+        left: 20px;
+    }
+
+    .menu ul {
+        margin-top: 20px;
+    }
+
+    .square-introduction {
+        width: 50%;
+        margin: 50px auto; /* Centre la div */
+    }
+
+    .photo-introduction {
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    .prestation-container {
+        flex-direction: column; /* Empile les sections */
+        height: auto;
+    }
+
+    .prestation {
+        height: auto;
+        margin: 10px;
+    }
+}
+
+/* 2️⃣ Petits écrans (mobiles) */
+
+/* 📱 RESPONSIVE : Afficher le menu burger */
+@media screen and (max-width: 768px) {
+    .menu-list {
+        display: none; /* Caché par défaut */
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu-list.show {
+        display: flex; /* Affiche le menu quand on clique */
+    }
+
+    .burger-menu {
+        display: block; /* Affiche l'icône burger */
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logo-fit {
+        height: 150px;
+        margin-top: 0;
+        position: static;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .page-une {
+        background-size: contain;
+        height: auto;
+        padding: 20px;
+    }
+
+    .photo-introduction {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .square-introduction {
+        width: 80%;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .prestation-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .prestation {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
