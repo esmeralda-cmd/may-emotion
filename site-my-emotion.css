@@ -345,4 +345,17 @@ button:hover {
         padding: 10px; /* Réduit l'espace */
         font-size: 14px; /* Adapte la taille du texte */
     }
+    button {
+        background-color: #D4A373; /* Couleur chaude et élégante */
+        color: white; /* Texte blanc */
+        border: none; /* Supprime la bordure */
+        padding: 15px 30px; /* Ajoute de l’espace autour du texte */
+        font-size: 14px; /* Augmente la taille du texte */
+        font-weight: bold; /* Rend le texte plus lisible */
+        border-radius: 30px; /* Arrondi les bords */
+        cursor: pointer; /* Curseur au survol */
+        transition: all 0.3s ease-in-out; /* Animation fluide */
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* Effet d’ombre */
+        margin-top: 10px;
+    }
 }
