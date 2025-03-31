@@ -24,7 +24,7 @@ header {
     width: 100%;
     z-index: 10; /* Le header doit toujours être au-dessus */
     padding: 10px;
-    background-color: #EDE9E3;
+    background-color: EDE9E3;
 }
 
 
@@ -82,45 +82,18 @@ nav {
 
 /*background*/
 
-.page-une {
-    
-     background-image: url('Image-may-emotions/beautiful-watercolor-floral-arrangement-removebg-preview.png');
-     background-position: center center;  /* Centre l'image */
-     background-size: 50%; /* Augmente la taille de l'image de fond */
+.hero-section{
      height: calc(100vh - 60px); /* 100% de l'écran moins la hauteur du header */
-     background-repeat: no-repeat;
      display: flex;
-     flex-direction: column;
      justify-content: center;
      align-items: center;
-     text-align: center;
-      
-   
 }
 
-.image-center {
-    display: flex   ;
-    text-align: center;
-    justify-content: center;
- 
-}
-
-/*présentation *introduction
-.introduction {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    gap: 0;
-    margin: 0;
-    padding: 0;
-
-}*/
 
 .introduction {
-    position: relative;
+    position: block;
     display: flex;
-    justify-content: left; /* Centre les éléments horizontalement */
+    justify-content: center; /* Centre les éléments horizontalement */
     align-items: center; /* Centre verticalement */
     width: 100%;
     gap: 0; /* Supprime les espaces */
@@ -128,19 +101,14 @@ nav {
     padding: 0;
 }
 
-div .photo-introduction {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    
-}
 
 .photo-introduction {
-    width: 20%; /* Ajuste la largeur */
-   
-    margin-left: 30%;
     padding: 0;
-    justify-content: flex-start;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    width: 65%;
+  
 }
 
 .photo-introduction img {
@@ -150,16 +118,15 @@ div .photo-introduction {
 }
 
 .square-introduction {
-    position: absolute;
+  
     width: 30%; 
     height: 50vh;
-    border-radius: 10px; 
-    margin: 100px 0 0  800px;
+ 
     background-color: rgba(255, 255, 255, 0.8);
     opacity: 1;
    
     display: flex; /* Active Flexbox */
-    flex-direction: column;
+   
     align-items: center; /* Centre verticalement */
     justify-content: center; /* Centre horizontalement */
     text-align: center; /* Centre le texte */
@@ -185,7 +152,17 @@ button:hover {
     background-color: #B6895B; /* Assombrit au survol */
 }
 
-
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    right: 10px; /* Décale à droite */
+    transform: translateY(-50%); /* Ajuste le centrage vertical */
+    background: rgba(255, 255, 255, 0.733); /* Fond semi-transparent */
+    padding: 15px;
+    max-width: 50%; /* Pour éviter que le texte prenne toute la largeur */
+    text-align: center; 
+    border-radius: 10px; /* Coins arrondis */
+}
 /* Section prestation */
 
 .prestation-container {
@@ -303,7 +280,7 @@ button:hover {
         margin: 10px 0;
     }
 
-    .page-une {
+    .hero-section {
         background-size: contain;
         height: auto;
         padding: 20px;
@@ -337,4 +314,13 @@ button:hover {
         padding: 10px;
         font-size: 16px;
     }
+
+
+.text-overlay {
+    max-width: 70%; /* Augmente la largeur dispo pour le texte */
+    font-size: 14px; /* Réduit la taille */
+    right: 5px; /* Ajuste l’alignement */
+    padding: 10px;
+}
+
 }
