@@ -93,6 +93,7 @@ nav {
 .introduction {
     position: block;
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Centre les éléments horizontalement */
     align-items: center; /* Centre verticalement */
     width: 100%;
@@ -121,12 +122,9 @@ nav {
   
     width: 30%; 
     height: 50vh;
- 
     background-color: rgba(255, 255, 255, 0.8);
     opacity: 1;
-   
     display: flex; /* Active Flexbox */
-   
     align-items: center; /* Centre verticalement */
     justify-content: center; /* Centre horizontalement */
     text-align: center; /* Centre le texte */
@@ -155,13 +153,18 @@ button:hover {
 .text-overlay {
     position: absolute;
     top: 50%; /* Centre verticalement */
-    right: 10px; /* Décale à droite */
+    right: 0px; /* Décale à droite */
+    height: 100%;
     transform: translateY(-50%); /* Ajuste le centrage vertical */
     background: rgba(255, 255, 255, 0.733); /* Fond semi-transparent */
     padding: 15px;
+    width: 40%;
     max-width: 50%; /* Pour éviter que le texte prenne toute la largeur */
     text-align: center; 
-    border-radius: 10px; /* Coins arrondis */
+    display: flex;
+    align-items: center; /* Centre le texte verticalement */
+    justify-content: center; /* Centre le texte horizontalement */
+    flex-direction: column;
 }
 /* Section prestation */
 
