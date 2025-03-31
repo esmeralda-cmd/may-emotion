@@ -341,6 +341,7 @@ button:hover {
         max-width: 100%; /* Empêche qu'il dépasse */
         right: 0; /* Colle à droite */
         top: 0; 
+        height: 50%;
         transform: none; /* Désactive le centrage vertical si besoin */
         padding: 10px; /* Réduit l'espace */
         font-size: 14px; /* Adapte la taille du texte */
