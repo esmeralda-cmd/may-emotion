@@ -98,7 +98,7 @@ nav {
     align-items: center; /* Centre verticalement */
     width: 100%;
     gap: 0; /* Supprime les espaces */
-    margin: 0 auto; /* Assure un centrage sur toute la largeur */
+    margin: 0; /* Assure un centrage sur toute la largeur */
     padding: 0;
 }
 
@@ -214,7 +214,7 @@ button:hover {
     }
 
     .photo-introduction {
-        width: 40%;
+        width: 80%;
         margin-left: 10%;
     }
 
@@ -325,8 +325,6 @@ button:hover {
     right: 0;
     font-size: 14px; /* Réduit la taille */
     padding: 10px;
-}
-;
 }
 
 }
