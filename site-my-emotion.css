@@ -321,9 +321,12 @@ button:hover {
 
 .text-overlay {
     max-width: 70%; /* Augmente la largeur dispo pour le texte */
+    bottom: 0; /* Placer l'overlay en bas de l'image */
+    right: 0;
     font-size: 14px; /* Réduit la taille */
-    right: 5px; /* Ajuste l’alignement */
     padding: 10px;
+}
+;
 }
 
 }
