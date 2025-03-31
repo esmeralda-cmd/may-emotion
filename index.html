@@ -87,5 +87,18 @@ Comme Dieu fait bien les choses, Mélanie a rencontré May. Cette rencontre a fa
         </p>
     </section>
     </main>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sélectionne les éléments du menu
+            const burgerMenu = document.querySelector(".burger-menu"); // Le bouton ☰
+            const menuList = document.querySelector(".menu-list"); // La liste du menu
+        
+            // Quand on clique sur le burger menu
+            burgerMenu.addEventListener("click", function() {
+                menuList.classList.toggle("show"); // Ajoute ou enlève la classe 'show'
+            });
+        });
+        </script>
 </body>
 </html>
