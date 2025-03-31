@@ -340,9 +340,8 @@ button:hover {
         width: 100%; /* L'overlay prend toute la largeur de l'image */
         max-width: 100%; /* Empêche qu'il dépasse */
         right: 0; /* Colle à droite */
-        bottom: 0; /* Colle en bas si besoin */
+        top: 0; 
         transform: none; /* Désactive le centrage vertical si besoin */
-        height: auto; /* Ajuste la hauteur */
         padding: 10px; /* Réduit l'espace */
         font-size: 14px; /* Adapte la taille du texte */
     }
