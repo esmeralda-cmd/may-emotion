@@ -336,21 +336,22 @@ button:hover {
         overflow: hidden; /* Coupe ce qui dépasse */
     }
 
-    .text-overlay {
+     .text-overlay {
         width: 100%; /* L'overlay prend toute la largeur de l'image */
         max-width: 100%; /* Empêche qu'il dépasse */
         right: 0; /* Colle à droite */
         top: 0; 
         height: 50%;
         transform: none; /* Désactive le centrage vertical si besoin */
-        padding: 10px; /* Réduit l'espace */
+        padding: 15px; /* Réduit l'espace */
         font-size: 14px; /* Adapte la taille du texte */
     }
+
     button {
         background-color: #D4A373; /* Couleur chaude et élégante */
         color: white; /* Texte blanc */
         border: none; /* Supprime la bordure */
-        padding: 15px 30px; /* Ajoute de l’espace autour du texte */
+        padding: 10px auto; /* Ajoute de l’espace autour du texte */
         font-size: 14px; /* Augmente la taille du texte */
         font-weight: bold; /* Rend le texte plus lisible */
         border-radius: 30px; /* Arrondi les bords */
