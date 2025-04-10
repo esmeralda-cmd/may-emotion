@@ -6,6 +6,7 @@
     <title>May.Emotion</title>
     <meta name="description" content="May, chanteuse professionnelle (49, Pays de la Loire), anime vos mariages, cérémonies religieuses et événements avec des prestations live sur mesure (guitare/voix, piano/voix). Contactez-la pour une ambiance unique !">
     <link rel="stylesheet" href="site-my-emotion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -35,6 +36,8 @@
              <div class="photo-introduction">
                 <img src="Image-may-emotions/may test.PNG" alt="">
                      <div class="text-overlay">
+
+                    <p class="style">Mettre un titre accrocheur et le styliser</p>
                     <p>May propose un instant guitare/voix, ou piano/voix : une formule cristalline pour votre cérémonie religieuse ou laïque dans le
                 MAINE ET LOIRE 49. </p>
                 <button>DEVIS</button>  
@@ -52,19 +55,38 @@
       </section>
 
         <!-- Section prestation -->
-         <div class="prestation-container" id="Services">
+        <h1  id="Services">Mes services</h1>
+        <p>Choisir mon accompagnement comme officiante de cérémonie,
+            c’est vivre une expérience authentique et inoubliable, portée par l’émotion et le sens.
+            C’est mettre votre histoire, vos mots et vos sentiments au cœur de votre journée.
+            Découvrez ci-dessous les prestations que je propose pour faire de votre cérémonie un moment unique.</p>
+         <div class="prestation-container">
+            
+           
              <section class="prestation">
+                <div class="prestation-image">
+                    <img src="Image-may-emotions\bows-rope-twine-pink-bouquets-white-chairs.jpg" alt="">
+                </div>
                 <h2 class="prestation-title">Célébrer : Mariages Baptêmes</h2>
+                <i class="fa-solid fa-chevron-down toggle-description" style="cursor: pointer;"></i>
                      <p>Je loue le Seigneur car j’aime les gens...</p>
              </section>
 
             <section class="prestation">
+                <div class="prestation-image">
+                    <img src="Image-may-emotions\vue-dessus-du-livre-ouvert-bougie-fleur-rouge-mur-sombre_179666-40031.jpg" alt="">
+                </div>
                 <h2 class="prestation-title">Chérir : Cérémonies Funéraires Obsèques Funérailles</h2>
+                <i class="fa-solid fa-chevron-down toggle-description" style="cursor: pointer;"></i>
                      <p>Ma force vient du fait que je travaille également auprès de personnes âgées...</p>
             </section>
 
              <section class="prestation">
+                <div class="prestation-image">
+                    <img src="Image-may-emotions\beautiful-people-celebrating-wedding-beach.jpg" alt="">
+                </div>
                 <h2 class="prestation-title">Pour les cérémonies laïques, cocktails, vin d'honneur</h2>
+                <i class="fa-solid fa-chevron-down toggle-description" style="cursor: pointer;"></i>
                     <p>Je vous invite à me parler de votre projet...</p>
                     
               </section>
@@ -88,17 +110,50 @@ Comme Dieu fait bien les choses, Mélanie a rencontré May. Cette rencontre a fa
     </section>
     </main>
 
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Sélectionne les éléments du menu
-            const burgerMenu = document.querySelector(".burger-menu"); // Le bouton ☰
-            const menuList = document.querySelector(".menu-list"); // La liste du menu
-        
-            // Quand on clique sur le burger menu
-            burgerMenu.addEventListener("click", function() {
-                menuList.classList.toggle("show"); // Ajoute ou enlève la classe 'show'
-            });
-        });
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+  // Gestion du menu burger
+  const burgerMenu = document.querySelector(".burger-menu");
+  const menuList = document.querySelector(".menu-list");
+  burgerMenu.addEventListener("click", function() {
+    menuList.classList.toggle("show"); // Affiche ou cache le menu
+  });
+
+  // Gestion des chevrons pour afficher/masquer les descriptions
+  const chevrons = document.querySelectorAll(".toggle-description");
+  chevrons.forEach(chevron => {
+    chevron.addEventListener("click", function () {
+      const p = this.nextElementSibling;
+      // Basculer l'affichage du texte et la rotation du chevron
+      if (p.style.display === "block") {
+        p.style.display = "none";
+        this.style.transform = "rotate(0deg)";
+      } else {
+        p.style.display = "block";
+        this.style.transform = "rotate(180deg)";
+        prestationDiv.classList.add("open");
+    }
+    });
+  });
+});
+
         </script>
 </body>
+
+<footer> © 2025 – Esméralda – Tous droits réservés</footer>
 </html>
+
+<!-- NOTES
+
+- rectification des intitulés du menu
+
+- prestation : <p> doit etre masqué au premier abors
+
+- Carroussel des témoignages
+
+pour ecran mobile : 
+- réduire l'icone de menu burger
+
+
++++ ajout répertoire >> A Voir avec Maying
+ -->
