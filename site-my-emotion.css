@@ -218,15 +218,25 @@ padding-bottom: 10px;
   }
 
 .prestation p {
-    display: block;
+    display: none;
     margin-top: 10px;
     transition: all 0.3s ease;
-    overflow: hidden;
+    
   }
   
-  .prestation.open {
+  .prestation.open p {
+    display: block;
     max-height: 5000px; /* Valeur élevée pour permettre l'agrandissement */
 }
+
+.toggle-description {
+    display: none; /* Cache la description par défaut */
+  }
+  
+  .prestation.open .toggle-description {
+    display: block; /* Affiche la description quand la classe 'open' est ajoutée */
+  }
+
 .page-trois {
     height: 50vh;
     margin: 50px 20px 20px 20px;
