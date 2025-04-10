@@ -129,33 +129,42 @@ Comme Dieu fait bien les choses, Mélanie a rencontré May. Cette rencontre a fa
     </main>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-  // Gestion du menu burger
-  const burgerMenu = document.querySelector(".burger-menu");
+       // GESTION DU MENU BURGER
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".burger-menu");
   const menuList = document.querySelector(".menu-list");
-  burgerMenu.addEventListener("click", function() {
-    menuList.classList.toggle("show"); // Affiche ou cache le menu
+
+  burger.addEventListener("click", () => {
+    menuList.classList.toggle("show");
   });
 
-  // Gestion des chevrons pour afficher/masquer les descriptions
-  const chevrons = document.querySelectorAll(".toggle-description");
-  chevrons.forEach(chevron => {
-    chevron.addEventListener("click", function () {
-      const p = this.nextElementSibling;
-      // Basculer l'affichage du texte et la rotation du chevron
-      if (p.style.display === "block") {
-        p.style.display = "none";
-        this.style.transform = "rotate(0deg)";
-      } else {
-        p.style.display = "block";
-        this.style.transform = "rotate(180deg)";
-        prestationDiv.classList.add("open");
-    }
+  // Ferme le menu quand on clique sur un lien
+  document.querySelectorAll(".menu-list a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuList.classList.remove("show");
     });
   });
 });
 
-        </script>
+
+
+//chevron
+document.querySelectorAll('.fa-chevron-down').forEach(function(chevron) {
+    chevron.addEventListener('click', function() {
+        // Trouve la prestation parente
+        const prestation = this.closest('.prestation');
+        // Bascule la classe 'open' pour afficher ou masquer la description
+        prestation.classList.toggle('open');
+
+        // Change l'icône du chevron
+        this.classList.toggle('fa-chevron-up');
+        this.classList.toggle('fa-chevron-down');
+    });
+});
+
+
+
+      </script>
 </body>
 
 <footer> © 2025 – Esméralda – Tous droits réservés</footer>
