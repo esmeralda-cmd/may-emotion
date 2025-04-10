@@ -38,8 +38,8 @@ nav {
 
 .logo-fit {
     height: 250px;
-    position: relative;
-    top: 70px;
+    position: absolute;
+    top: -70px;
     left: 50px;
     margin-top: 50px;
 }
@@ -47,8 +47,9 @@ nav {
 .menu {
     flex: 1; /* Permet au menu de prendre tout l’espace disponible */
     display: flex;
-    justify-content: flex-end; /* Centre les liens horizontalement */
+    justify-content: center; /* Centre les liens horizontalement */
     align-items: center;
+    margin-top: 50px;
 }
 
 .menu-list {
@@ -169,12 +170,19 @@ button:hover {
 /* Section prestation */
 
 .prestation-container {
-    height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     
     
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
 }
 .prestation {
     flex: 1;
@@ -182,7 +190,8 @@ button:hover {
     margin: 20px;
     background-color: #fff;
     margin-top: 20px;
-    height: 50vh;
+  
+    
 }
 
 .prestation-title {
@@ -190,7 +199,34 @@ button:hover {
     margin-bottom: 10px;
 }
 
+.prestation-image img{
+display: block;
+height: 40%;
+width: 100%;
+object-fit: cover;
+padding-bottom: 10px;
+}
 
+.toggle-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #D4A373;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+  }
+
+.prestation p {
+    display: block;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .prestation.open {
+    max-height: 5000px; /* Valeur élevée pour permettre l'agrandissement */
+}
 .page-trois {
     height: 50vh;
     margin: 50px 20px 20px 20px;
@@ -336,7 +372,7 @@ button:hover {
         overflow: hidden; /* Coupe ce qui dépasse */
     }
 
-     .text-overlay {
+    .text-overlay {
         width: 100%; /* L'overlay prend toute la largeur de l'image */
         max-width: 100%; /* Empêche qu'il dépasse */
         right: 0; /* Colle à droite */
