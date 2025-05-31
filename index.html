@@ -16,10 +16,10 @@
         <img class="logo-fit" src="Image-may-emotions/May.png" alt="LOGO">
         <nav class="menu">
             <ul class="menu-list">
-                <li><a href="#Accueil">Accueil</a></li>
-                <li><a href="#Services">Mes services</a></li>
-                <li><a href="#About">A propos de moi</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Home">Accueil</a></li>
+                <li><a href="#Services" onclick="scrollToSection(event, 'Services')">Mes services</a></li>
+                <li><a href="#About" onclick="scrollToSection(event, 'About')">A propos de moi</a></li>
+                <li><a href="#Contact" onclick="scrollToSection(event, 'Contact')">Contact</a></li>
             </ul>
         </nav>
 
@@ -32,103 +32,114 @@
 
     <main>
         <!-- Section page 1 (accueil) -->
-        <section class="hero-section">
+        <section id="#Home">
+            <section class="hero-section">
 
-            <div class="introduction">
+                <div class="introduction">
 
-                <div class="photo-introduction">
-                    <img src="Image-may-emotions/may test.PNG" alt="">
-                    <div class="text-overlay">
+                    <div class="photo-introduction">
+                        <img src="Image-may-emotions/may test.PNG" alt="">
+                        <div class="text-overlay">
 
-                        <p class="style">Mettre un titre accrocheur et le styliser</p>
-                        <p>May propose un instant guitare/voix, ou piano/voix : une formule cristalline pour votre
-                            cérémonie religieuse ou laïque dans le
-                            MAINE ET LOIRE 49. </p>
-                        <button>DEVIS</button>
-                    </div>
-
-
+                            <p class="style">Mettre un titre accrocheur et le styliser</p>
+                            <p>May propose un instant guitare/voix, ou piano/voix : une formule cristalline pour votre
+                                cérémonie religieuse ou laïque dans le
+                                MAINE ET LOIRE 49. </p>
+                            <button>DEVIS</button>
+                        </div>
 
 
-                    <!-- <div class="square-introduction">
+
+
+                        <!-- <div class="square-introduction">
                 <p>May propose un instant guitare/voix, ou piano/voix : une formule cristalline pour votre cérémonie religieuse ou laïque dans le
             MAINE ET LOIRE 49. </p>  -->
 
+                    </div>
                 </div>
-            </div>
+            </section>
+
         </section>
-
         <!-- Section prestation -->
-        <h1 id="Services">Mes services</h1>
-        <p>Choisir mon accompagnement comme officiante de cérémonie,
-            c’est vivre une expérience authentique et inoubliable, portée par l’émotion et le sens.
-            C’est mettre votre histoire, vos mots et vos sentiments au cœur de votre journée.
-            Découvrez ci-dessous les prestations que je propose pour faire de votre cérémonie un moment unique.</p>
-        <div class="prestation-container">
+        <section id="Services" class="page-deux">
+            <h1>Mes services</h1>
+            <p class="text-padding">Choisir mon accompagnement comme officiante de cérémonie,
+                c’est vivre une expérience authentique et inoubliable, portée par l’émotion et le sens.
+                C’est mettre votre histoire, vos mots et vos sentiments au cœur de votre journée.
+                Découvrez ci-dessous les prestations que je propose pour faire de votre cérémonie un moment unique.</p>
+            <div class="prestation-container">
 
 
-            <section class="prestation">
-                <div class="prestation-image">
-                    <img src="Image-may-emotions\bows-rope-twine-pink-bouquets-white-chairs.jpg" alt="">
-                </div>
-                <h2 class="prestation-title">Célébrer : Mariages Baptêmes</h2>
-                <i class="fa-solid fa-chevron-down toggle-description" style="cursor: pointer;"></i>
-                <p>Je loue le Seigneur car j’aime les gens.
-                    Je ne vous cache pas que je suis émue intérieurement quand je vous vois entrer dans l’église, futur
-                    marié et future mariée.
+                <section class="prestation">
+                    <div class="prestation-image">
+                        <img src="Image-may-emotions\bows-rope-twine-pink-bouquets-white-chairs.jpg" alt="">
+                    </div>
+                    <h2 class="prestation-title">Célébrer : Mariages Baptêmes</h2>
+                    <i class="fa-solid fa-chevron-down toggle-description" style="cursor: pointer;"></i>
+                    <p>Je loue le Seigneur car j’aime les gens.
+                        Je ne vous cache pas que je suis émue intérieurement quand je vous vois entrer dans l’église,
+                        futur
+                        marié et future mariée.
 
-                    J’ai envie de donner de ma sensibilité et de l’entrain car pour les futurs mariés, je sais que vous
-                    vivez un moment fort.
-                    Pour un mariage, je saurai chanter des louanges chrétiennes adaptées et je peux vous guider dans le
-                    choix de celles-ci.
+                        J’ai envie de donner de ma sensibilité et de l’entrain car pour les futurs mariés, je sais que
+                        vous
+                        vivez un moment fort.
+                        Pour un mariage, je saurai chanter des louanges chrétiennes adaptées et je peux vous guider dans
+                        le
+                        choix de celles-ci.
 
-                    Vous pouvez aussi me contacter pour un baptême.
+                        Vous pouvez aussi me contacter pour un baptême.
 
-                    Ayant animé plusieurs cérémonies religieuses : j’apprécie de me mettre en lien avec votre prêtre ou
-                    votre diacre afin de servir au mieux votre cérémonie</p>
-            </section>
+                        Ayant animé plusieurs cérémonies religieuses : j’apprécie de me mettre en lien avec votre prêtre
+                        ou
+                        votre diacre afin de servir au mieux votre cérémonie</p>
+                </section>
 
-            <section class="prestation">
-                <div class="prestation-image">
-                    <img src="Image-may-emotions\vue-dessus-du-livre-ouvert-bougie-fleur-rouge-mur-sombre_179666-40031.jpg"
-                        alt="">
-                </div>
-                <h2 class="prestation-title">Chérir : Cérémonies Funéraires Obsèques Funérailles</h2>
-                <i class="fa-solid fa-chevron-down toggle-description" style="cursor: pointer;"></i>
-                <p>Ma force vient du fait que je travaille également auprès de personnes âgées.
-
-
-                    Pour des obsèques, il n’y a personne pour chanter les louanges d’adieux... ?
-
-
-                    J’ai compris que j’ai la capacité de transmettre l’émotion dans les louanges chrétiennes, que
-                    c’était important de pouvoir accompagner une telle cérémonie avec ma voix afin de mieux métaboliser
-                    l’expérience. </p>
-            </section>
-
-            <section class="prestation">
-                <div class="prestation-image">
-                    <img src="Image-may-emotions\beautiful-people-celebrating-wedding-beach.jpg" alt="">
-                </div>
-                <h2 class="prestation-title">Pour les cérémonies laïques, cocktails, vin d'honneur</h2>
-                <i class="fa-solid fa-chevron-down toggle-description" style="cursor: pointer;"></i>
-                <p>Je vous invite à me parler de votre projet.
+                <section class="prestation">
+                    <div class="prestation-image">
+                        <img src="Image-may-emotions\vue-dessus-du-livre-ouvert-bougie-fleur-rouge-mur-sombre_179666-40031.jpg"
+                            alt="">
+                    </div>
+                    <h2 class="prestation-title">Chérir : Cérémonies Funéraires Obsèques Funérailles</h2>
+                    <i class="fa-solid fa-chevron-down toggle-description" style="cursor: pointer;"></i>
+                    <p>Ma force vient du fait que je travaille également auprès de personnes âgées.
 
 
+                        Pour des obsèques, il n’y a personne pour chanter les louanges d’adieux... ?
 
-                    Vous souhaitez que je chante à votre cérémonie religieuse et au cocktail / vin d'honneur ? C'est
-                    avec joie que je vous propose un tarif global avantageux. </p>
 
-            </section>
+                        J’ai compris que j’ai la capacité de transmettre l’émotion dans les louanges chrétiennes, que
+                        c’était important de pouvoir accompagner une telle cérémonie avec ma voix afin de mieux
+                        métaboliser
+                        l’expérience. </p>
+                </section>
 
+                <section class="prestation">
+                    <div class="prestation-image">
+                        <img src="Image-may-emotions\beautiful-people-celebrating-wedding-beach.jpg" alt="">
+                    </div>
+                    <h2 class="prestation-title">Pour les cérémonies laïques, cocktails, vin d'honneur</h2>
+                    <i class="fa-solid fa-chevron-down toggle-description" style="cursor: pointer;"></i>
+                    <p>Je vous invite à me parler de votre projet.
+
+
+
+                        Vous souhaitez que je chante à votre cérémonie religieuse et au cocktail / vin d'honneur ? C'est
+                        avec joie que je vous propose un tarif global avantageux. </p>
+
+                </section>
+        </section>
         </div>
-        <!-- Section fin page d'accueil -->
-        <section class="page-trois">
 
-            <h1 id="About">Comment je suis arrivée à chanter pour des cérémonies ?
+        </section>
+        <!-- Section fin page d'accueil -->
+        <section id="About" class="page-trois">
+
+            <div class="ancre-fantome"></div>
+            <h1>Comment je suis arrivée à chanter pour des cérémonies ?
             </h1>
 
-            <p>
+            <p class="text-padding">
                 Mélanie, une future mariée souhaitait une chorale GOSPEL pour son mariage à l'église. En faisant des
                 devis auprès de différentes chorales, les tarifs proposés pour 2-3 personnes dépassaient largement le
                 budget que Mélanie pouvait mettre pour les chants à l'église, elle a dû y renoncer. Elle rêvait
@@ -169,6 +180,14 @@
             });
         });
 
+        // JavaScript pour forcer un scroll parfait vers about
+    function scrollToSection(event, id) {
+    event.preventDefault();
+    document.getElementById(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+   }
 
 
         //chevron
